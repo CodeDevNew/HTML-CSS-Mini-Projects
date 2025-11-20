@@ -10,7 +10,7 @@ Feel free to use these projects for learning, experimenting, or enhancing your f
 ## Features
 - Pure HTML & CSS
 - Animations & transitions
-- Responsive layouts
+- 3D deisgn and transform properties
 - UI design practice
 - Beginner-friendly
 
