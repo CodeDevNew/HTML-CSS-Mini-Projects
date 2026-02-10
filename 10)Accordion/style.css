@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* crimson 
+dogerblue
+*/
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  height: 100dvh;
+}
+
+#accordion {
+  width: 600px;
+}
+
+#accordion li {
+  list-style: none;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#accordion li label {
+  color: dodgerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#accordion li label + input[type="radio"] {
+  display: none;
+}
+#accordion li label span {
+  transform: rotate(90deg);
+}
+
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+#accordion li label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
